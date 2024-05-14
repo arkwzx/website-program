@@ -1,88 +1,133 @@
 <!DOCTYPE html>
 <html lang="ch-ZN">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>模拟商城</title>
     <link rel="stylesheet" href="index.css">
 
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <h3>模拟商城</h3>
+      <h3>模拟商城</h3>
     </div>
     <div class="banner publicWidth">
-        <img src="images/R-C.jpg" alt="">
+      <img src="images/R-C.jpg" alt="">
     </div>
     <div class="goods publicWidth">
-        <ul>
-            <li>
-                <div><img src="images/char.jpg" alt="" title="实木原木大板茶桌椅组合家用办公茶几茶具套装一体茶台禅意泡茶桌 石盘款 1.2米+2月牙 组装">
-                </div>
-                <p>实木原木大板茶桌椅组合家用办公茶几茶具套装一体茶台禅意泡茶桌</p>
-                <span>1380</span>
-                <button>购买</button>
-            </li>
-            <li>
-                <div><img src="images/sofa.jpg" alt="" title="沙发床两用可折叠小户型客厅单人三人座多功能欧式布艺沙发经济 亚麻浅灰色 600cm 单人座无扶手总长小沙发">
-                </div>
-                <p>沙发床两用可折叠小户型客厅单人三人座多功能欧式布艺沙发</p>
-                <span>432.6</span>
-                <button>购买</button>
-            </li>
-            <li>
-                <div><img src="images/earphone.jpg" alt=""
-                        title="米愿 头戴式蓝牙耳机无线带麦音乐游戏吃鸡运动通话降噪耳麦可插卡插线适用华为苹果安卓手机电脑通用 B39【炫酷黑/呼吸灯/超长续航】">
+      <ul>
+        <li>
+          <div class="goodsCard">
+            <img src="images/char.jpg" alt="">
+            <p>实木原木大板茶桌椅组合家用办公茶几茶具套装一体茶台禅意泡茶桌</p>
+            <span>1380</span>
+            <button onclick="popPurchase(0)">购买</button>
+          </div>
+        </li>
 
-                </div>
-                <p>米愿 头戴式蓝牙耳机无线带麦音乐游戏吃鸡运动通话降噪耳麦可插卡插线适用华为苹果安卓手机电脑通用</p>
-                <span>41.32</span>
-                <button>购买</button>
-            </li>
-            <li>
-                <div><img src="images/bike.jpg" alt="" title="5TH WHEEL五轮出行新国标智能电动自行车男女通用可折叠30KM长续航电动车电助力车D1 曜金黑">
+        <li>
+          <div class="goodsCard">
+            <img src="images/sofa.jpg" alt="">
+            <p>沙发床两用可折叠小户型客厅单人三人座多功能欧式布艺沙发</p>
+            <span>432.6</span>
+            <button onclick="popPurchase(1)">购买</button>
+          </div>
+        </li>
 
-                </div>
-                <p>5TH WHEEL五轮出行新国标智能电动自行车男女通用可折叠30KM长续航电动车电助力车</p>
-                <span>3499</span>
-                <button>购买</button>
-            </li>
-            <li>
-                <div><img src="images/mobilephone.jpg" alt=""
-                        title="OPPO A1x 新品5G 天玑700 5000mAh大电池长续航 5G全网通手机 A2x （A1X）星空黑 6GB+128GB">
+        <li>
+          <div class="goodsCard">
+            <img src="images/earphone.jpg" alt="">
+            <p>米愿 头戴式蓝牙耳机无线带麦音乐游戏吃鸡运动通话降噪耳麦可插卡插线适用华为苹果安卓手机电脑通用</p>
+            <span>41.32</span>
+            <button onclick="popPurchase(2)">购买</button>
+          </div>
+        </li>
 
-                </div>
-                <p>OPPO A1x 新品5G 天玑700 5000mAh大电池长续航 5G全网通手机 星空黑 6GB+128GB</p>
-                <span>758</span>
-                <button>购买</button>
-            </li>
-            <li>
-                <div><img src="images/camera.jpg" alt=""
-                        title="Nikon/尼康J1套机J2J4J5V1二手微单相机入门机单电迷你数码相机10-30镜头 95新尼康J5+10-30镜头">
+        <li>
+          <div class="goodsCard">
+            <img src="images/bike.jpg" alt="">
+            
+            <p>5TH WHEEL五轮出行新国标智能电动自行车男女通用可折叠30KM长续航电动车电助力车</p>
+            <span>3499</span>
+            <button onclick="popPurchase(3)">购买</button>
+          </div>
+        </li>
 
-                </div>
-                <p>Nikon/尼康J1套机J2J4J5V1二手微单相机入门机单电迷你数码相机10-30镜头 95新尼康J5+10-30镜头</p>
-                <span>2099</span>
-                <button>购买</button>
-            </li>
-            <li>
-                <div><img src="images/router.jpg" alt=""
-                        title="华为路由AX3 Pro new  WiFi 6+ 3000Mbps 一碰联网 免密接入  无线家用穿墙/高速千兆无线路由器"></div>
-                <p>华为路由AX3 Pro new WiFi 6+ 3000Mbps 一碰联网 免密接入 无线家用穿墙/高速千兆无线路由器</p>
-                <span>299</span>
-                <button>购买</button>
-            </li>
-            <li>
-                <div><img src="images/mop.jpg" alt="" title="茶花 拖把家用一拖净拖布地拖墩布免手洗旋转自拧水吸水懒人拖把"></div>
-                <p>茶花 拖把家用一拖净拖布地拖墩布免手洗旋转自拧水吸水懒人拖把</p>
-                <span>49.9</span>
-                <button>购买</button>
-            </li>
-        </ul>
+        <li>
+          <div class="goodsCard">
+            <img src="images/mobilephone.jpg" alt="">
+            
+            <p>OPPO A1x 新品5G 天玑700 5000mAh大电池长续航 5G全网通手机 星空黑 6GB+128GB</p>
+            <span>758</span>
+            <button onclick="popPurchase(4)">购买</button>
+          </div>
+        </li>
+
+        <li>
+          <div class="goodsCard">
+            <img src="images/camera.jpg" alt="">
+
+            <p>Nikon/尼康J1套机J2J4J5V1二手微单相机入门机单电迷你数码相机10-30镜头 95新尼康J5+10-30镜头</p>
+            <span>2099</span>
+            <button onclick="popPurchase(5)">购买</button>
+          </div>
+        </li>
+
+        <li>
+          <div class="goodsCard">
+            <img src="images/router.jpg" alt="">
+            <p>华为路由AX3 Pro new WiFi 6+ 3000Mbps 一碰联网 免密接入 无线家用穿墙/高速千兆无线路由器</p>
+            <span>299</span>
+            <button onclick="popPurchase(6)">购买</button>
+          </div>
+        </li>
+
+        <li>
+          <div class="goodsCard">
+            <img src="images/mop.jpg" alt="">
+            <p>茶花 拖把家用一拖净拖布地拖墩布免手洗旋转自拧水吸水懒人拖把</p>
+            <span>49.9</span>
+            <button onclick="popPurchase(7)">购买</button>
+          </div>
+        </li>
+      </ul>
     </div>
-    <script src="index.js"></script>
-</body>
+
+    <div id="purchase">
+      <p id="title">购买商品</p>
+      <p id="goodsNameTitle">商品：</p>
+      <p id="goodsName"></p>
+
+      <div class="inputLine">
+        <p class="beforeInput">姓名：</p>
+        <input name="name" type="text" />
+      </div>
+
+      <div class="inputLine">
+        <p class="beforeInput">地址：</p>
+        <input name="location" type="text" />
+      </div>
+
+      <div id="number">
+        <p>数量：</p>
+        <span class="numControl" onclick="changeNumber(true)">+</span>
+        <p id="number"></p>
+        <span class="numControl" onclick="changeNumber(false)">-</span>
+      </div>
+
+      <div id="price">
+        <p>价格：</p>
+        <span>200</span>
+      </div>
+
+      <div id="windowControl">
+        <button onclick="closePurchase(false)">取消</button>
+        <button onclick="closePurchase(true)">购买</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 
 </html>

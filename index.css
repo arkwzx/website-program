@@ -4,11 +4,15 @@
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
     list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .publicWidth {
@@ -17,6 +21,7 @@ li {
 }
 
 .header {
+  z-index: 100;
     line-height: 42px;
     height: 42px;
     background-color: skyblue;
@@ -28,6 +33,7 @@ li {
 }
 
 .banner {
+  z-index: 100;
     margin: 10px auto;
     height: 500px;
     background-color: #fff;
@@ -38,15 +44,26 @@ li {
     height: 100%;
 }
 
-.goods ul li {
-    position: relative;
-    float: left;
-    width: 280px;
-    height: 400px;
-    margin: 9px;
-    border: 1px solid gray;
-    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, .1);
-    background-color: #fff;
+.goods {
+  z-index: 100;
+}
+
+div.goodsCard {
+  all: initial;
+  position: relative;
+  float: left;
+  width: 280px;
+  height: 400px;
+  margin: 9px;
+  border: 1px solid gray;
+  box-shadow: 0 2px 3px 3px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  transition: ease-in-out .45s;
+}
+
+div.goodsCard:hover {
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, .3);
+  transition: ease-in-out .45s;
 }
 
 .goods ul li img {
@@ -80,5 +97,119 @@ li {
     color: #fff;
     border: 1px solid gray;
     background-color: red;
+}
 
+div#purchase {
+  visibility: hidden;
+  z-index: 200;
+  position: fixed;
+
+  padding-top: 1%;
+
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  height: 60%;
+  block-size: fit-content;
+  
+  border: 1px solid gray;
+  background-color: #fff;
+
+  text-align: center;
+}
+
+div#purchase * {
+  margin-bottom: 10px;
+}
+
+div#purchase p {
+  font-size: 20px;
+}
+
+div#purchase p#title {
+  font-size: 40px;
+  text-align: center;
+}
+
+p#goodsNameTitle {
+  display: inline-block;
+}
+
+p#goodsName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+div.inputLine {
+  text-align: center;
+  font-size: 20px;
+}
+
+div.inputLine p {
+  display: inline-block;
+}
+
+div.inputLine input {
+  padding: 2px;
+  font-size: 20px;
+  border: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 4px;
+}
+
+div.inputLine input:focus {
+  outline: none;
+}
+
+div#number {
+  text-align: center;
+}
+
+div#number * {
+  display: inline-block;
+}
+
+div#number span {
+  width: 20px;
+  height: 20px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  color: #fff;
+  background-color: rgb(230, 0, 100);
+  border-radius: 50%;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+div#price {
+  text-align: center;
+}
+
+div#price * {
+  display: inline-block;
+}
+
+div#price span {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+div#windowControl {
+  text-align: center;
+}
+
+div#windowControl button {
+  margin: 10px;
+
+  width: 100px;
+  height: 50px;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
 }
